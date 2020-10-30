@@ -236,6 +236,7 @@ body{
     font-weight: 500;
     background-color: #406AFF;
     width: 128px;
+    cursor: pointer;
 }
 
 .results{
@@ -736,4 +737,15 @@ body{
 }
 .contact:visited{
     color: white;
+}
+
+.contacted{
+    display: block;
+    align-self: center;
+    background-color: #9F9F9F;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 35px;
 }

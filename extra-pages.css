@@ -77,6 +77,9 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .send-button a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     color: white;
     font-size: 25px;
     font-weight: 700;
@@ -84,4 +87,16 @@
 }
 .send-button a:visited{
     color: white;
+}
+
+.applied-listing{
+    margin: 13px 0px;
+    height: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+.applied-listing: visited{
+    color: black
 }

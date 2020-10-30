@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Petri Homepage</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <meta name="author" content="Michael Li">
+</head>
+<body>
+    <div class="menu">
+        <a class="title" href=home.html>
+            Petri
+        </a>
+        <div class="pages">
+            <div class="help">
+                <input type="checkbox" id="help-checkbox">
+                <label class="help-button" for="help-checkbox">Help</label>
+                <div class="blue-background">
+                    <div class="help-text">
+                        <div class="exit">
+                            <label for="help-checkbox" class="close-button"></label>
+                        </div>
+                        <div class="question-title">What is Petri?</div>
+                        <div class="question-answer">
+                            Petri is a tool that connect undergraduate students to research 
+                            opportunities throughout the Columbia University campus. We aggregate 
+                            all research opportunities across multiple university departments to 
+                            give students easy access to these opportunities. 
+                        </div>
+                        <div class="question-title">How do I use Petri?</div>
+                        <div class="question-answer">
+                            First make sure to look through your class schedule and see if you have
+                            time to participate in reserach work throughout the semester. Many 
+                            research opportunities expect students to commit to an agreed upon 
+                            set of hours each week so don’t agree to commit to something you don’t 
+                            have time for! <br/><br/>
+
+                            Then, look through all the opportunities posted on Petri. Use our search 
+                            and filter features to narrow down the experiences to only those that 
+                            interest you. Don’t forget to read through the descriptions for each 
+                            opportunity to get a better understanding of what you would be doing.<br/><br/>
+
+                            Once you have identified a few suitable opportunities, click on the 
+                            opportunity’s “contact” button to send the researchers an email through 
+                            our website. Make sure to include any information they listed in the 
+                            “What we want to know about you” section. Once an inqury is submitted, 
+                            researchers will respond directly to your email.
+                        </div>
+                        <div class="question-title">How do I keep track of positions I have applied for?</div>
+                        <div class="question-answer">
+                            Click on the “My Account” button in the top right to look at opportunities 
+                            you have applied to.
+                        </div>
+                        <div class="question-title">Additional information</div>
+                        <div class="question-answer">
+                            The biology department has written a great guide to finding research 
+                            opportunities at Columbia. It includes other information such as how to 
+                            structure your emails or information on researching for credit. Make sure 
+                            to check out the resource
+                            <a href=https://www.biology.columbia.edu/programs/undergraduate-research>here</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="my-account.html">My Account</a>
+            <a>Logout</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="search">
+            <div class="search-header">
+                <div class="search-row">
+                    <form class="search-bar">
+                        <div class="icon-background">
+                            <div class="magnifying-glass"></div>
+                        </div>
+                        <input class="user-input" type="text" id="search-input" 
+                            name="search-input" value="Opportunity #1">
+                        <input class="search-button" type="submit" id="search-button"
+                            name="search-button" value="Search">
+                    </form>
+                    <div class="results">
+                        Showing 1 result
+                    </div>
+                </div>
+                <div class="dropdowns">
+                    <div class="filters">
+                        <label tabindex="0" class="filter">
+                            <input type="checkbox">
+                            <div class="filter-box">
+                                <div class="filter-text">
+                                    <div class="filter-title">Filter By</div>
+                                    <div class="filter-name">Department</div>
+                                </div>
+                                <div class="arrow-container">
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="filter-dropdown">
+                                <label class="filter-link"> Computer Science
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                                <label class="filter-link"> Chemistry
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                                <label class="filter-link"> Physics
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                            </div>
+                        </label>
+                        <label tabindex="0" class="filter">
+                            <input type="checkbox">
+                            <div class="filter-box">
+                                <div class="filter-text">
+                                    <div class="filter-title">Filter By</div>
+                                    <div class="filter-name">Work Type</div>
+                                </div>
+                                <div class="arrow-container">
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
+                            <div class="filter-dropdown">
+                                <label class="filter-link"> Part-time Research
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                                <label class="filter-link"> Volunteer
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                                <label class="filter-link"> Research Internship
+                                    <input type="checkbox">
+                                    <span class="filter-checkbox">
+                                </label>
+                            </div>
+                        </label>
+                        <label class="remote-filter"> 
+                            <input type="checkbox">
+                            <div class="remote-filter-background">
+                                Remote Only
+                            </div>
+                        </label>
+                    </div>
+                    <label tabindex="0" class="sorting">
+                        <input type="checkbox">
+                        <div class="filter-box">
+                            <div class="filter-text">
+                                <div class="filter-title">Sort By</div>
+                                <div class="date-posted-row">
+                                    <div class="filter-name">Date Posted</div>
+                                    <div class="sort-arrow-container">
+                                        <div class="sort-arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-container">
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                        <div class="sorting-dropdown">
+                            <div class="link-container">
+                                <div class="sorting-background-top">
+                                    <a class="specific-sorting" href="./date-posted-descending.html">Date Posted</a>
+                                </div>
+                                <div class="sorting-background">
+                                    <a class="specific-sorting">Application Date</a>
+                                </div>
+                                <div class="sorting-background-bottom">
+                                    <a class="specific-sorting">Alphabetical</a>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="opportunities">
+                <label class="listing">
+                    <input type="radio" name="listing" checked/>
+                    <div class="listing-background">
+                        <div class="left-text">
+                            <div class="job-title">Opportunity #1</div>
+                            <div class="date-posted">Date Posted</div>
+                        </div>
+                        <div class="lab">Lab #1</div>
+                    </div>
+                </label>
+                <div class="bottom-padding">'</div>
+            </div>
+        </div>
+        <div class="description-body">
+            <div class="lab-name">Lab #1</div>
+            <div class="department-name">Chemistry Department</div>
+            <div class="opportunity-name">Opportunity #1</div>
+            <div class="decription-title">Opportunity Description</div>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                 deserunt mollit anim id est laborum.
+            </div>
+            <label class="read-more">
+                <input type="checkbox">
+                <div class="more-text">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                    voluptatem sequi nesciunt.
+                </div>
+                <span class="read-more-text"></span>
+            </label>
+            <div class="decription-title">What we want to know about you</div>
+            <ul class="bullet">
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. 
+                </li>
+                <li>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> 
+                </li>
+                <li>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+                </li>
+            </ul>
+            <div class="contacted">Contacted</div>
+            <div class="bottom-padding">'</div>
+        </div>
+    </div>
+</body>
+</html>
