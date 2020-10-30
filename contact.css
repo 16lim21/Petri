@@ -1,0 +1,11 @@
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    color: #B9D9EB;
+    margin: 70px 72px;
+}
+
+.contact-title{
+    font-size: 36px;
+    font-weight: 700;
+}
