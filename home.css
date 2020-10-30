@@ -1,0 +1,385 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    background-color: #B9D9EB;
+    height: 110px;
+    align-items: center;
+}
+
+.title{
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 7.2px; /* 10% */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pages{
+    display: flex;
+    width: 315px;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.body{
+    display: flex;
+}
+
+.search{
+    flex-direction: column;
+    background-color: #F3F4F8;
+    width: 1050px;
+}
+
+.search-header{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    margin: 35px 42px 18px 42px;
+}
+
+.search-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.search-bar{
+    display: flex;
+    height: 100%;
+    width: 546px;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF;
+}
+
+.icon-background{
+    display: flex;
+    width: 70px;
+    background-color: #FAF8F8;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Found css implementation of magnifying glass here: https://codepen.io/artemdemo/pen/HzDLn */
+.magnifying-glass{
+    margin-top: -2px;
+    font-size: 30px; /* This controls the size. */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 50%;
+}
+.magnifying-glass::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    bottom: -2px;
+    background: black;
+    border-radius: 2px;
+    width: 8px;
+    height: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.user-input{
+    border: 0px;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.search-button{
+    border: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #406AFF;
+    width: 128px;
+}
+
+.results{
+    color: black;
+}
+
+.dropdowns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    width: 546px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter{
+    width: 180px;
+    position: relative;
+    pointer-events: auto;
+}
+
+.filter input{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.filter-box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: white;
+    padding: 4px 18px; 
+    justify-content: space-between;
+    align-items: center;;
+}
+
+.filter-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-title{
+    font-size: 14px;
+    font-weight: 300;
+    color: #9F9F9F;
+}
+
+.filter-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.arrow-container{
+    display: flex;
+    margin-right: 5px;
+}
+
+.arrow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    border-radius: 5px;
+    top: -3px;
+    height: 10px;
+    width: 2px;
+    background: black;
+}
+
+.arrow::before {
+    left: -3px;
+    transform: rotate(-45deg);
+}
+
+.arrow::after {
+    left: 2.75px;
+    transform: rotate(45deg);
+}
+
+/* Help with css dropdown menu without javascript https://lage.us/CSS-Onclick-Dropdown-Menu.html */
+.filter-box:hover{
+    cursor: pointer;
+}
+
+.filter input:checked ~ .filter-dropdown{
+    display: block;
+}
+
+.filter-dropdown{
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+    width: 210px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.filter-link{
+    display: flex;
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    height: 31px;
+    padding-left: 37px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Help implementing checkboxes here: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.filter-link input {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.filter-checkbox{
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 8px 11px;
+}
+
+.filter-checkbox:after{
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    top: 1px;
+    left: 5px;
+    width: 3px;
+    height: 8px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.filter-link input:checked ~ .filter-checkbox:after{
+    visibility: visible;
+}
+
+.remote-filter{
+    width: 120px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+}
+
+.remote-filter input{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.remote-filter-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+.remote-filter input:checked ~ .remote-filter-background{
+    background-color: #E5E5E5;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sorting{
+    width: 210px;
+    position: relative;
+    pointer-events: auto;
+}
+
+.sorting input{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+
+.sorting input:checked ~ .sorting-dropdown{
+    display: block;
+}
+
+.sorting-dropdown{
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+    width: 210px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sorting-background{
+    padding: 5px 17px;
+    background-color: white;
+}
+
+.sorting-background-top{
+    padding: 5px 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+
+.sorting-background-bottom{
+    padding: 5px 17px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+
+.specific-sorting{
+    width: 100%;
+    height: 100%;
+}
+
+.sorting-background:hover{
+    background-color: #E5E5E5;
+}
+
+.sorting-background-top:hover{
+    background-color: #E5E5E5;
+}
+
+.sorting-background-bottom:hover{
+    background-color: #E5E5E5;
+}
