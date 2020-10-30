@@ -2,10 +2,86 @@
     display: flex;
     flex-direction: column;
     color: #B9D9EB;
-    margin: 70px 72px;
+    margin: 50px 72px;
+    margin-bottom: 20px;
 }
 
 .contact-title{
     font-size: 36px;
     font-weight: 700;
+}
+
+.posted-by{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-form-body{
+    margin-top: 40px;
+    padding: 35px;
+    border-radius: 10px;
+    background-color: #B9D9EB;
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.input{
+    margin-right: 40px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.long-text{
+    margin-top: 25px;
+    overflow-y: auto;
+    resize: vertical;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.send-button{
+    align-self: flex-end;
+    margin-top: 25px;
+    background-color: #406AFF;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+}
+.send-button:hover{
+    transform: translateY(-10%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.send-button a{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.send-button a:visited{
+    color: white;
 }

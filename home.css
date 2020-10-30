@@ -216,6 +216,7 @@ body{
     border: 0px;
     padding-left: 10px;
     flex-grow: 1;
+    font-size: 18px
 }
 
 .search-button{
